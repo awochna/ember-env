@@ -18,4 +18,8 @@ Use it from your ember project directory like so:
 
     docker run -it -P -v "$PWD":/usr/src/app awochna/ember-env
 
+
 It exposes ports 4200 (for `ember serve`) and 35729 (for livereload), so with the above `-P` flag, you can point your browser to `http://localhost:4200` like you would with local development.
+
+It has `NODE_ENV` set to `production` by default, so you may want to change that.
+I'm not here to judge.

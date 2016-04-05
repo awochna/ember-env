@@ -4,6 +4,10 @@ MAINTAINER Alex Wynter <awynter@tidyfoxdev.com>
 
 EXPOSE 4200 35729
 
+RUN apt-get update \
+ && apt-get install -y libfontconfig \
+ && rm -rf /var/lib/apt/lists/*
+
 RUN npm install -g ember-cli@2.4.3 \
  && npm install -g bower@1.7.7 \
  && npm install -g phantomjs-prebuilt@2.1.7
