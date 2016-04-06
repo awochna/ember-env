@@ -10,7 +10,7 @@ It uses:
 
 * ember-cli 2.4.3
 * the latest version of bower
-* the latest version of phantomjs
+* PhantomJS 1.9.8 (see issue #3 for explanation)
 * the latest version of node LTS
 * Ubuntu 14.04 LTS
 
